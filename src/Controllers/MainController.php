@@ -4,7 +4,7 @@ namespace Tm\Centaurus\Controllers;
 
 use Delight\Auth\Auth;
 use League\Plates\Engine;
-use \Tm\Centaurus\Core\Redirect;
+use \Tm\Centaurus\Core\Session;
 use \Tm\Centaurus\Core\SendMail;
 use \Tm\Centaurus\Core\FormDTO;
 use Monolog\Level;
@@ -28,7 +28,6 @@ class MainController {
   
     public function main_view(): void 
     {
-
         echo $this->templates->render('main');   
             
     }
@@ -48,7 +47,7 @@ class MainController {
         $sendMailReport = $this->mail->run($response);
 
         $this->log->info($response->name . ' ' . $response->phone . ' ' . $response->email . ' ' . $response->question . ' ' . $sendMailReport . PHP_EOL);
-  
+
     }
   
 

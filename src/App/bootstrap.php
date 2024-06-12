@@ -3,12 +3,13 @@
 namespace Tm\Centaurus\App;
 
 use \Tm\Centaurus\Core\Router;
+use \Tm\Centaurus\Core\Session;
 
 // Start a Session
-//if( !session_id() ) {
-//    session_start();
-//}
-//$_SESSION['page'] = 1;
+if( !session_id() ) {
+   session_start();
+}
+Session::put('page', 1);
 
 $GLOBALS['config']  =   [
     'mail' => [
