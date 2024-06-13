@@ -40,7 +40,7 @@ class Router {
       
         $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
              $r->addRoute('GET', '/doc', ['\Tm\Centaurus\Controllers\MainController', 'doc_view']);
-             $r->addRoute('GET', '/404', ['\Tm\Centaurus\Controllers\ErrorController', '404']);
+             $r->addRoute('GET', '/404', ['\Tm\Centaurus\Controllers\ErrorController', 'run']);
              $r->addRoute('GET', '/', ['\Tm\Centaurus\Controllers\MainController', 'main_view']);
              $r->addRoute('POST', '/', ['\Tm\Centaurus\Controllers\MainController', 'send_request']);
         
@@ -60,8 +60,8 @@ class Router {
         
          switch ($routeInfo[0]) {
              case FastRoute\Dispatcher::NOT_FOUND:
-                 //Redirect::to('404');
-                 echo '404 Not Found';
+                 Redirect::to('404');
+                 //echo '404 Not Found';
                  break;
              case FastRoute\Dispatcher::METHOD_NOT_ALLOWED:
                  $allowedMethods = $routeInfo[1];

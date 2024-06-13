@@ -2,10 +2,10 @@
     $this->layout('template', ['title' => 'VPC | VoIP платформа Центавр - Документация.']); 
 ?>
 
-<?php $this->insert('header2') ?>
+<?php $this->insert('header', ['style' => 'background: linear-gradient(180deg,#0e223a 11.98%,rgba(22,73,131,.38) 51.04%,#0e223a 92.19%),url(../img/doc/doc.jpg)', 'block' => 'header_block2', 'link_main_page' => 'href=/'] ) ?>
 
 <main>
-        <section class="benefits none1" id="section1">
+        <section class="benefits none1" id="section1" data-aos="fade-up">
            
             <div class="feedback__title" style="text-align: center;">
                 <h2 class="title-2">Руководства,<br>требования и условия</h2>

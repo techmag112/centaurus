@@ -26,7 +26,7 @@ class ErrorController {
     * mainAction() вывод шаблона ошибки 404
     * @return void
     */
-    public function mainAction() {
+    public function run() {
         echo $this->templates->render('404');   
           
     }

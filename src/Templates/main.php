@@ -3,7 +3,7 @@
     обработки вызовов со стандартными функционалом телефонной станции, системы записи аудио и видео переговоров и конференций.']); 
 ?>
 
-<?php $this->insert('header') ?>
+<?php $this->insert('header', ['style' => '', 'block' => 'header_block1', 'link_main_page' => 'data-scrollto="section1"'] ) ?>
 
 <main>
         <section class="benefits none1" id="section1">
