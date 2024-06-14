@@ -42,6 +42,7 @@ class Router {
              $r->addRoute('GET', '/doc', ['\Tm\Centaurus\Controllers\MainController', 'doc_view']);
              $r->addRoute('GET', '/404', ['\Tm\Centaurus\Controllers\ErrorController', 'run']);
              $r->addRoute('GET', '/', ['\Tm\Centaurus\Controllers\MainController', 'main_view']);
+             $r->addRoute('GET', '/support', ['\Tm\Centaurus\Controllers\MainController', 'support_view']);
              $r->addRoute('POST', '/', ['\Tm\Centaurus\Controllers\MainController', 'send_request']);
         
         });

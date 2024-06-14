@@ -15,7 +15,7 @@
                                 <li><a <?=$this->e($link_main_page)?>>О продукте</a></li>
                                 <li><a href="/doc">Документация</a></li>
                                 <li><a data-scrollto="section2">Цены</a></li>
-                                <!-- <li><a href="#!">Техподдержка</a></li> -->
+                                <!-- <li><a href="/support">Техподдержка</a></li> -->
                                 <li><a data-scrollto="section2">Связаться с нами</a></li>
                             </ul>
                         </nav>

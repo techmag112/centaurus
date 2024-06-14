@@ -38,6 +38,11 @@ class MainController {
        
     }
 
+    public function support_view(): void 
+    {
+        echo $this->templates->render('support');
+       
+    }
   
     public function send_request(): void 
     {
